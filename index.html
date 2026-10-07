@@ -56,7 +56,7 @@
                     AZ•ART
                 </div>
                 <span class="text-2xl md:text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 drop-shadow-[0_2px_10px_rgba(236,72,153,0.5)]">
-                    SLOTS
+                    NEON
                 </span>
             </div>
             <p class="text-xs text-slate-400 tracking-wider mt-0.5">Lightful Gambling Web App</p>
@@ -144,7 +144,7 @@
                 </div>
             </div>
 
-            <!-- Широкая кнопка PLAY с общей ставкой (только цифра) -->
+            <!-- Широкая кнопка PLAY с общей ставкой -->
             <button id="spin-btn" onclick="handleSpinClick()" class="w-full h-12 rounded-xl bg-gradient-to-r from-pink-600 via-purple-600 to-cyan-500 hover:from-pink-500 hover:to-cyan-400 text-white font-black text-xl shadow-lg shadow-pink-600/30 active:scale-[0.98] transition flex items-center justify-center relative">
                 <span id="spin-btn-text">30</span>
                 <span id="auto-counter" class="absolute top-2 right-4 text-[10px] bg-cyan-500 text-slate-950 px-2 py-0.5 rounded-full font-bold hidden"></span>
@@ -170,41 +170,52 @@
             
             <div class="space-y-2 text-xs font-mono overflow-y-auto pr-1 flex-grow mb-4">
                 <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800">
-                    <div class="font-bold text-purple-400 mb-1">⭐ Wild (Дикий символ)</div>
-                    <div class="text-slate-300">Заменяет любой стандартный символ (кроме Scatter) для построения самой выгодной выигрышной комбинации на линии.</div>
+                    <div class="font-bold text-purple-400 mb-1">⭐ Wild</div>
+                    <div class="text-slate-300 font-sans">Заменяет любой символ (кроме Scatter).</div>
                 </div>
 
                 <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800">
-                    <div class="font-bold text-pink-400 mb-1">🎰 Scatter (Скаттер)</div>
-                    <div class="text-slate-300">Выпадение ровно 3 Скаттеров (по одному на каждом из трех барабанов) запускает супер-игру с призовыми сундуками.</div>
+                    <div class="font-bold text-pink-400 mb-1">🎰 Scatter</div>
+                    <div class="text-slate-300 font-sans">Выпадение одновременно 3 запускает бонусную игру с призовыми сундуками.</div>
                 </div>
 
-                <div class="border-t border-slate-800 pt-2 text-slate-400 font-sans text-[11px] uppercase tracking-wider font-bold">Множители линий (3 в ряд)</div>
+                <div class="border-t border-slate-800 pt-2 text-slate-400 font-sans text-[11px] uppercase tracking-wider font-bold">Множители линий</div>
                 
                 <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
-                    <span>💎 💎 💎 (Бриллиант)</span>
-                    <span class="font-bold text-yellow-400">x50 ставки линии</span>
+                    <span class="tracking-widest">⭐ ⭐ ⭐</span>
+                    <span class="font-bold text-yellow-400">x30</span>
                 </div>
                 <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
-                    <span>👑 👑 👑 (Корона)</span>
-                    <span class="font-bold text-yellow-400">x25 ставки линии</span>
+                    <span class="tracking-widest">💎 💎 💎</span>
+                    <span class="font-bold text-yellow-400">x20</span>
                 </div>
                 <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
-                    <span>🍉 🍉 🍉 (Арбуз)</span>
-                    <span class="font-bold text-yellow-400">x15 ставки линии</span>
+                    <span class="tracking-widest">👑 👑 👑</span>
+                    <span class="font-bold text-yellow-400">x15</span>
                 </div>
                 <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
-                    <span>🍋 🍋 🍋 (Лимон)</span>
-                    <span class="font-bold text-yellow-400">x10 ставки линии</span>
+                    <span class="tracking-widest">🍉 🍉 🍉</span>
+                    <span class="font-bold text-yellow-400">x10</span>
                 </div>
                 <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
-                    <span>🍒 🍒 🍒 (Вишня)</span>
-                    <span class="font-bold text-yellow-400">x5 ставки линии</span>
+                    <span class="tracking-widest">🍋 🍋 🍋</span>
+                    <span class="font-bold text-yellow-400">x5</span>
                 </div>
-
-                <div class="border-t border-slate-800 pt-2 text-slate-400 font-sans text-[11px] uppercase tracking-wider font-bold">Комбинации из 2 символов</div>
-                <div class="bg-slate-950/50 p-2 rounded-lg border border-slate-800/50 text-[11px] text-slate-400">
-                    Совпадение 2 одинаковых символов (или с участием Wild) на линии оплачивается с коэффициентом от 20% до 30% от полной стоимости трех символов в зависимости от позиций.
+                <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
+                    <span class="tracking-widest">🍒 🍒 🍒</span>
+                    <span class="font-bold text-yellow-400">x3</span>
+                </div>
+                <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
+                    <span>🍒 🍒 ❌</span>
+                    <span class="font-bold text-yellow-400">x2.5</span>
+                </div>
+                <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
+                    <span>🍒 ❌ 🍒</span>
+                    <span class="font-bold text-yellow-400">x2</span>
+                </div>
+                <div class="flex items-center justify-between bg-slate-950/60 p-2 rounded-lg border border-slate-800/50">
+                    <span>❌ 🍒 🍒</span>
+                    <span class="font-bold text-yellow-400">x1.5</span>
                 </div>
             </div>
 
@@ -214,16 +225,16 @@
         </div>
     </div>
 
-    <!-- Модальное окно Супер-игры -->
+    <!-- Модальное окно Бонусной игры -->
     <div id="bonus-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-gradient-to-b from-purple-900/90 to-slate-900 border-2 border-yellow-500 rounded-3xl p-6 max-w-md w-full shadow-[0_0_50px_rgba(234,179,8,0.3)] text-center relative">
-            <h2 class="text-2xl font-black text-yellow-400 mb-1 drop-shadow">🎰 БОНУСНАЯ ИГРА! 🎰</h2>
+            <h2 class="text-2xl font-black text-yellow-400 mb-1 drop-shadow">БОНУСНАЯ ИГРА</h2>
             <p class="text-xs text-slate-300 mb-4">Вы поймали 3 Скаттера! Выберите один из призовых сундуков:</p>
             
             <div class="grid grid-cols-3 gap-3 my-6">
                 <button id="chest-1" onclick="pickBonus(1)" class="bg-slate-950/80 border-2 border-yellow-500/60 hover:border-yellow-400 hover:scale-105 transition rounded-2xl p-4 text-4xl shadow-lg flex items-center justify-center h-20">🎁</button>
                 <button id="chest-2" onclick="pickBonus(2)" class="bg-slate-950/80 border-2 border-yellow-500/60 hover:border-yellow-400 hover:scale-105 transition rounded-2xl p-4 text-4xl shadow-lg flex items-center justify-center h-20">🎁</button>
-                <button id="chest-3" onclick="pickBonus(3)" class="bg-slate-950/80 border-2 border-yellow-500/60 hover:border-yellow-400 hover:scale-105 transition rounded-2xl p-4 text-4xl shadow-lg flex items-center justify-center h-20">🎁</button>
+                <button id="chest-3" onclick="pickBonus(3)" class="pickBonus(3)" class="bg-slate-950/80 border-2 border-yellow-500/60 hover:border-yellow-400 hover:scale-105 transition rounded-2xl p-4 text-4xl shadow-lg flex items-center justify-center h-20">🎁</button>
             </div>
 
             <div id="bonus-result-text" class="text-sm font-bold text-emerald-400 min-h-[30px]"></div>
@@ -232,7 +243,16 @@
 
     <!-- Игровая логика -->
     <script>
-        const standardSymbols = ['🍒', '🍒', '🍒', '🍋', '🍋', '🍉', '🍉', '👑', '💎', '⭐', '⭐'];
+        const standardSymbols = ['🍒', '🍋', '🍉', '👑', '💎', '⭐'];
+
+        const weightedSymbolPool = [
+            { sym: '🍒', weight: 38 },
+            { sym: '🍋', weight: 26 },
+            { sym: '🍉', weight: 18 },
+            { sym: '👑', weight: 10 },
+            { sym: '💎', weight: 5 },
+            { sym: '⭐', weight: 8 }
+        ];
 
         let balance = 1000;
         let lineBet = 10;
@@ -258,14 +278,6 @@
             modalEl.classList.toggle('hidden', !show);
         }
 
-        function getReelSymbol(reelIndex, existingScatterInReel) {
-            const isScatter = Math.random() < 0.14;
-            if (isScatter && !existingScatterInReel) {
-                return '🎰';
-            }
-            return standardSymbols[Math.floor(Math.random() * standardSymbols.length)];
-        }
-
         function changeBet(amount) {
             if (isSpinning) return;
             lineBet = Math.max(5, Math.min(100, lineBet + amount));
@@ -281,12 +293,8 @@
         function updateUI() {
             betDisplayEl.textContent = lineBet;
             linesDisplayEl.textContent = activeLines;
-            
             const baseRoundCost = lineBet * activeLines;
-            const autoVal = parseInt(autoSelectEl.value);
-            const multiplier = (autoVal > 0) ? autoVal : 1;
-            
-            spinBtnText.textContent = baseRoundCost * multiplier;
+            spinBtnText.textContent = baseRoundCost;
         }
 
         let audioCtx = null;
@@ -344,6 +352,80 @@
             updateUI();
         }
 
+        function getRandSym() {
+            const totalWeight = weightedSymbolPool.reduce((sum, item) => sum + item.weight, 0);
+            let randomNum = Math.random() * totalWeight;
+            for (let item of weightedSymbolPool) {
+                if (randomNum < item.weight) {
+                    return item.sym;
+                }
+                randomNum -= item.weight;
+            }
+            return '🍒';
+        }
+
+        function generateSpinResult() {
+            const isBonusRoll = Math.random() < 0.025;
+            if (isBonusRoll) {
+                return [
+                    [getRandSym(), '🎰', getRandSym()],
+                    [getRandSym(), '🎰', getRandSym()],
+                    [getRandSym(), '🎰', getRandSym()]
+                ];
+            }
+
+            const forceEmpty = Math.random() < 0.42;
+            
+            let matrix;
+            let attempts = 0;
+            do {
+                matrix = [
+                    [getRandSym(), getRandSym(), getRandSym()],
+                    [getRandSym(), getRandSym(), getRandSym()],
+                    [getRandSym(), getRandSym(), getRandSym()]
+                ];
+                attempts++;
+            } while (forceEmpty && attempts < 20 && checkHasWins(matrix));
+
+            return matrix;
+        }
+
+        function checkHasWins(matrix) {
+            let scatterCount = 0;
+            matrix.forEach(col => col.forEach(s => { if(s === '🎰') scatterCount++; }));
+            if (scatterCount === 3) return true;
+
+            const allLines = [
+                [matrix[0][0], matrix[1][0], matrix[2][0]],
+                [matrix[0][1], matrix[1][1], matrix[2][1]],
+                [matrix[0][2], matrix[1][2], matrix[2][2]],
+                [matrix[0][0], matrix[1][1], matrix[2][2]],
+                [matrix[0][2], matrix[1][1], matrix[2][0]]
+            ];
+
+            for (let i = 0; i < activeLines; i++) {
+                let [s1, s2, s3] = allLines[i];
+                let targetSym = null;
+                if (s1 !== '⭐' && s1 !== '🎰') targetSym = s1;
+                else if (s2 !== '⭐' && s2 !== '🎰') targetSym = s2;
+                else if (s3 !== '⭐' && s3 !== '🎰') targetSym = s3;
+                else targetSym = '⭐';
+
+                const m1 = (s1 === targetSym || s1 === '⭐');
+                const m2 = (s2 === targetSym || s2 === '⭐');
+                const m3 = (s3 === targetSym || s3 === '⭐');
+
+                if (m1 && m2 && m3) return true;
+
+                let pairSym12 = (s1 !== '🎰' && s2 !== '🎰' && (s1 === s2 || s1 === '⭐' || s2 === '⭐')) ? (s1 === '⭐' ? s2 : s1) : null;
+                let pairSym23 = (s2 !== '🎰' && s3 !== '🎰' && (s2 === s3 || s2 === '⭐' || s3 === '⭐')) ? (s2 === '⭐' ? s3 : s2) : null;
+                let pairSym13 = (s1 !== '🎰' && s3 !== '🎰' && (s1 === s3 || s1 === '⭐' || s3 === '⭐')) ? (s1 === '⭐' ? s3 : s1) : null;
+
+                if (pairSym12 === '🍒' || pairSym23 === '🍒' || pairSym13 === '🍒') return true;
+            }
+            return false;
+        }
+
         function spin() {
             if (isSpinning) return;
             const totalCost = lineBet * activeLines;
@@ -358,23 +440,13 @@
             winDisplayEl.textContent = "0";
             isSpinning = true;
 
-            const reelsResult = [];
-            for (let i = 0; i < 3; i++) {
-                let colHasScatter = false;
-                const col = [];
-                for (let r = 0; r < 3; r++) {
-                    const sym = getReelSymbol(i, colHasScatter);
-                    if (sym === '🎰') colHasScatter = true;
-                    col.push(sym);
-                }
-                reelsResult.push(col);
-            }
+            const reelsResult = generateSpinResult();
 
             for (let i = 0; i < 3; i++) {
                 const track = document.getElementById(`reel-${i}`);
                 let html = '';
                 for (let k = 0; k < 12; k++) {
-                    html += `<div class="symbol">${standardSymbols[Math.floor(Math.random() * standardSymbols.length)]}</div>`;
+                    html += `<div class="symbol">${getRandSym()}</div>`;
                 }
                 html += `<div class="symbol">${reelsResult[i][0]}</div>`;
                 html += `<div class="symbol">${reelsResult[i][1]}</div>`;
@@ -451,7 +523,7 @@
                 { name: "Диагональ ↗", symbols: [matrix[0][2], matrix[1][1], matrix[2][0]] }
             ];
 
-            const baseMultipliers = { '💎': 50, '👑': 25, '🍉': 15, '🍋': 10, '🍒': 5 };
+            const baseMultipliers = { '⭐': 30, '💎': 20, '👑': 15, '🍉': 10, '🍋': 5, '🍒': 3 };
 
             for (let i = 0; i < activeLines; i++) {
                 let [s1, s2, s3] = allLines[i].symbols;
@@ -462,34 +534,40 @@
                 if (s1 !== '⭐' && s1 !== '🎰') targetSym = s1;
                 else if (s2 !== '⭐' && s2 !== '🎰') targetSym = s2;
                 else if (s3 !== '⭐' && s3 !== '🎰') targetSym = s3;
-                else targetSym = '💎';
+                else targetSym = '⭐';
 
                 const match1 = (s1 === targetSym || s1 === '⭐');
                 const match2 = (s2 === targetSym || s2 === '⭐');
                 const match3 = (s3 === targetSym || s3 === '⭐');
 
                 if (match1 && match2 && match3) {
-                    multiplier = baseMultipliers[targetSym] || 5;
-                    winDesc = `3 в ряд (${targetSym} + Wild, x${multiplier})`;
+                    multiplier = baseMultipliers[targetSym] || 3;
+                    winDesc = `3 в ряд (${targetSym}, x${multiplier})`;
                 } else {
                     let pairSym = null;
                     let posType = "";
                     if ((s1 === s2 || s1 === '⭐' || s2 === '⭐') && s1 !== '🎰' && s2 !== '🎰') {
                         pairSym = s1 === '⭐' ? s2 : s1;
-                        posType = "позиции 1-2";
+                        posType = "1-2";
                     } else if ((s2 === s3 || s2 === '⭐' || s3 === '⭐') && s2 !== '🎰' && s3 !== '🎰') {
                         pairSym = s2 === '⭐' ? s3 : s2;
-                        posType = "позиции 2-3";
+                        posType = "2-3";
                     } else if ((s1 === s3 || s1 === '⭐' || s3 === '⭐') && s1 !== '🎰' && s3 !== '🎰') {
                         pairSym = s1 === '⭐' ? s3 : s1;
-                        posType = "позиции 1-3";
+                        posType = "1-3";
                     }
 
-                    if (pairSym && pairSym !== '⭐') {
-                        const base = baseMultipliers[pairSym] || 5;
-                        const factor = posType === "позиции 1-3" ? 0.2 : 0.3;
-                        multiplier = Math.max(1, Math.round(base * factor));
-                        winDesc = `2 в ряд (${pairSym}, ${posType}, x${multiplier})`;
+                    if (pairSym === '🍒') {
+                        if (posType === "1-2") {
+                            multiplier = 2.5;
+                            winDesc = `2 в ряд (🍒🍒, позиция 1-2, x2.5)`;
+                        } else if (posType === "1-3") {
+                            multiplier = 2;
+                            winDesc = `2 в ряд (🍒 🍒, позиция 1-3, x2)`;
+                        } else if (posType === "2-3") {
+                            multiplier = 1.5;
+                            winDesc = `2 в ряд ( 🍒🍒, позиция 2-3, x1.5)`;
+                        }
                     }
                 }
 
@@ -522,7 +600,7 @@
                 btn.className = "bg-slate-950/80 border-2 border-yellow-500/60 hover:border-yellow-400 hover:scale-105 transition rounded-2xl p-4 text-4xl shadow-lg flex items-center justify-center h-20";
             }
             bonusModalEl.classList.remove('hidden');
-            logMessage(`🌟 ВЫПАЛО 3 СКАТТЕРА! Запущена супер-игра!`, "text-yellow-400 font-bold");
+            logMessage(`🌟 ВЫПАЛО 3 СКАТТЕРА! Запущена бонусная игра!`, "text-yellow-400 font-bold");
         }
 
         function getRandomBonusMultiplier() {
@@ -556,7 +634,7 @@
             
             setTimeout(() => {
                 bonusModalEl.classList.add('hidden');
-                logMessage(`🏆 Супер-игра завершена! Выигрыш: +${prizeWin} (x${prizeMultiplier})`, "text-yellow-400 font-bold");
+                logMessage(`🏆 Бонусная игра завершена! Выигрыш: +${prizeWin} (x${prizeMultiplier})`, "text-yellow-400 font-bold");
             }, 2500);
         }
 
